@@ -1,0 +1,141 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Duy Tan University</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="~/Css/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Custom Theme files -->
+    <link href="~/Css/css/style.css" rel='stylesheet' type='text/css' />
+    <!-- Custom Theme files -->
+    <!--webfont-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="~/Css/js/jquery-1.11.1.min.js"></script>
+    <script src="~/Css/js/responsiveslides.min.js"></script>
+    <script>
+    $(function () {
+      $("#slider").responsiveSlides({
+      	auto: true,
+      	nav: true,
+      	speed: 500,
+        namespace: "callbacks",
+        pager: true,
+      });
+    });
+    </script>
+    <script type="text/javascript" src="~/Css/js/hover_pack.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="header_top">
+            <div class="container">
+                <div class="logo">
+                    <a href="#"><img src="~/Css/images/ddt_logo.png" alt="" /></a>
+                </div>
+                <ul class="shopping_grid">
+                    <a href="#"><li>Sign In</li></a>
+                </ul>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="column_center">
+        <div class="container">
+            <div class="search">
+                <div class="stay">Search Topic</div>
+                <div class="stay_right">
+                    <input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+                    <input type="submit" value="">
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="content_top">
+            <div class="container">
+                <div class="col-md-3 sidebar_box">
+                    <div class="sidebar">
+                        <div class="menu_box">
+                            <h3 class="menu_head">Catalog</h3>
+                            <ul class="menu">
+                                <li class="item1">
+                                    <a href="#"><img class="arrow-img" src="~/Css/images/f_menu.png" alt="" />Foreign Language</a>
+                                </li>
+                                <li class="item2">
+                                    <a href="#"><img class="arrow-img" src="~/Css/images/f_menu.png" alt="" />Information Technology</a>
+                                </li>
+                                <li class="item3">
+                                    <a href="#"><img class="arrow-img" src="~/Css/images/f_menu.png" alt="" />Travelling</a>
+                                </li>
+                                <li class="item4">
+                                    <a href="#"><img class="arrow-img" src="~/Css/images/f_menu.png" alt="" />Bank</a>
+                                </li>
+                                <li class="item5">
+                                    <a href="#"><img class="arrow-img" src="~/Css/images/f_menu.png" alt="" />Accounting</a>
+                                </li>
+                                <li class="item6">
+                                    <a href="#"><img class="arrow-img" src="~/Css/images/f_menu.png" alt="" />Building</a>
+                                </li>
+                                <li class="item7">
+                                    <a href="#"><img class="arrow-img" src="~/Css/images/f_menu.png" alt="" />Business</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--initiate accordion-->
+                        <script type="text/javascript">
+			$(function() {
+			    var menu_ul = $('.menu > li > ul'),
+			           menu_a  = $('.menu > li > a');
+			    menu_ul.hide();
+			    menu_a.click(function(e) {
+			        e.preventDefault();
+			        if(!$(this).hasClass('active')) {
+			            menu_a.removeClass('active');
+			            menu_ul.filter(':visible').slideUp('normal');
+			            $(this).addClass('active').next().stop(true,true).slideDown('normal');
+			        } else {
+			            $(this).removeClass('active');
+			            $(this).next().stop(true,true).slideUp('normal');
+			        }
+			    });
+
+			});
+                        </script>
+                    </div>
+
+
+                </div>
+                <div class="col-md-9 content_right">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_bg">
+    </div>
+
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="cssmenu">
+                <ul>
+                    <li class="active"><a href="#">Privacy Policy</a></li> .
+                    <li><a href="#">Terms of Service</a></li> .
+                    <li><a href="#">Creative Rights Policy</a></li> .
+                    <li><a href="#">Contact Us</a></li> .
+                    <li><a href="#">Support & FAQ</a></li>
+                </ul>
+            </div>
+            <div class="copy">
+                <p>Capstone 2017 by <a href="http://duytan.edu.vn/" target="_blank">Twenty</a></p>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</body>
+</html>

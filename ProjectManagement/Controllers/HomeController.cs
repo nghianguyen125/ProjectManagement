@@ -26,5 +26,12 @@ namespace ProjectManagement.Controllers
 
             return View();
         }
+
+        public ActionResult Regulation()
+        {
+            ViewBag.Message = "Your Regulation.";
+
+            return View();
+        }
     }
 }
