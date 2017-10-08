@@ -18,7 +18,7 @@ namespace ProjectManagement.Controllers
             thesisRepository = thesisRepoPara;
         }
 
-        public ActionResult Index()
+        public ActionResult GraduationThesis()
         {
             return View();
         }
@@ -30,6 +30,16 @@ namespace ProjectManagement.Controllers
                 .DeTai
                 .FirstOrDefault(x => x.DeTaiId == deTaiId);
             return View(deTai);
+        }
+
+        public ActionResult MyGroup()
+        {
+            return View();
+        }
+
+        public ActionResult MyProgress()
+        {
+            return View();
         }
     }
 }

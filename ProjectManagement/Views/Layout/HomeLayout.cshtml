@@ -32,12 +32,11 @@
         <div class="header_top">
             <div class="container">
                 <div class="logo">
-                    <a href="#"><img src="~/Css/images/ddt_logo.png" alt="" /></a>
+                    <a><img src="~/Css/images/ddt_logo.png" alt="" /></a>
                 </div>
                 <ul class="shopping_grid">
                     <a href="#"><li>My Account</li></a>
                     <a href="#"><li>Sign Out</li></a>
-                    <div class="clearfix"> </div>
                 </ul>
                 <div class="clearfix"> </div>
             </div>
@@ -47,9 +46,9 @@
             <div class="container">
                 <a class="toggleMenu" href="#">Menu</a>
                 <ul class="nav">
-                    <li class="active"><a href="#" data-hover="Home">Home</a></li>
-                    <li><a href="#" data-hover="About Us">Graduation Thesis</a></li>
-                    <li><a href="#" data-hover="Careers">Topic</a></li>
+                    <li class="active"><a href="#" data-hover="Home">@Html.ActionLink("Home","Index","Home")</a></li>
+                    <li><a href="#" data-hover="About Us">@Html.ActionLink("Graduation Thesis", "GraduationThesis","Thesis")</a></li>
+                    <li><a href="#" data-hover="Careers">@Html.ActionLink("Topic", "Viewer", "Viewer")</a></li>
                 </ul>
                 <script type="text/javascript" src="~/Css/js/nav.js"></script>
             </div><!-- end h_menu4 -->
@@ -93,17 +92,23 @@
                             <h3 class="menu_head">Catalog</h3>
                             <ul class="menu">
                                 <li class="item1">
-                                    <a href="#"><img class="arrow-img" src="~/Css/images/f_menu.png" alt="" />News</a>
+                                    <a href="#"><img class="arrow-img" src="~/Css/images/f_menu.png" alt="" />News & Annoucement</a>
+                                    <ul class="cute">
+                                        <li class="subitem1"><a href="#">@Html.ActionLink("News", "News", "Home")</a></li>
+                                    </ul>
                                 </li>
                                 <li class="item2">
                                     <a href="#"><img class="arrow-img" src="~/Css/images/f_menu.png" alt="" />My Topic</a>
                                     <ul class="cute">
-                                        <li class="subitem1"><a href="#">My Group</a></li>
-                                        <li class="subitem2"><a href="#">My Progress</a></li>
+                                        <li class="subitem1"><a href="#">@Html.ActionLink("My Group", "MyGroup", "Thesis")</a></li>
+                                        <li class="subitem2"><a href="#">@Html.ActionLink("My Progress", "MyProgress", "Thesis")</a></li>
                                     </ul>
                                 </li>
-                                <li class="item3">
+                                <li class="subitem3">
                                     <a href="#"><img class="arrow-img" src="~/Css/images/f_menu.png" alt="" />Regulation</a>
+                                    <ul class="cute">
+                                        <li class="subitem1"><a href="#">@Html.ActionLink("Regulation", "Regulation", "Home")</a></li>
+                                    </ul>
                                 </li>
                             </ul>
                         </div>

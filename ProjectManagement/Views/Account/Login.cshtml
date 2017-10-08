@@ -24,10 +24,10 @@
         <div class="header_top">
             <div class="container">
                 <div class="logo">
-                    <a href="#"><img src="~/Css/images/ddt_logo.png" alt="" /></a>
+                    <a><img src="~/Css/images/ddt_logo.png" alt="" /></a>
                 </div>
                 <ul class="shopping_grid">
-                    <a href="#"><li>Sign In</li></a>
+                    <a><li>@Html.ActionLink("Sign In", "Login")</li></a>
                 </ul>
                 <div class="clearfix"> </div>
             </div>
@@ -38,7 +38,7 @@
             <div class="register">
                 <div class="col-md-6 login-left">
                     <h3>NEW USERS</h3>
-                    <a class="acount-btn" href="register.html">Create an Account</a>
+                    <a class="acount-btn" @Html.ActionLink("Create an Account", "Register")</a>
                 </div>
                 <div class="col-md-6 login-right">
                     <h3>REGISTERED USERS</h3>

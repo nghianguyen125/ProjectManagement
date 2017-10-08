@@ -191,6 +191,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ThesisController.cs" />
+    <Compile Include="Controllers\ViewerController.cs" />
     <Compile Include="Entities\BinhLuan.cs" />
     <Compile Include="Entities\DeTai.cs" />
     <Compile Include="Entities\GiangVien.cs" />
@@ -271,10 +272,14 @@
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Layout\ViewLayout.cshtml" />
     <Content Include="Views\Home\Regulation.cshtml" />
+    <Content Include="Views\Viewer\Viewer.cshtml" />
+    <Content Include="Views\Thesis\GraduationThesis.cshtml" />
+    <Content Include="Views\Home\News.cshtml" />
+    <Content Include="Views\Thesis\MyGroup.cshtml" />
+    <Content Include="Views\Thesis\MyProgress.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Manage\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
