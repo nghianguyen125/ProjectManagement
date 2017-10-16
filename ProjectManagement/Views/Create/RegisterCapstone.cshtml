@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewBag.Title = "RegisterCapstone";
+    Layout = "~/Views/Layout/HomeLayout.cshtml";
+}
+<h2>RegisterCapstone</h2>
+
+<div class="register-top-grid">
+    <h3>PERSONAL INFORMATION</h3>
+    <div>
+        <span>Full Name<label>*</label></span>
+        <br />
+        <input type="text">
+                <span>the number of credits completed<label>*</label></span>
+                <input type="text">
+
+                <span>the number of remaining credits<label>*</label></span>
+                <input type="text">
+        <span>Select the academic year and semester <label>*</label></span>
+            <select>
+                <option selected="selected" value="0">Chọn năm học</option>
+                <option value="1">Năm Học 2009-2010</option>
+                <option value="2">Năm Học 2011-2012</option>
+                <option value="3">Năm Học 2012-2013</option>
+                <option value="4">Năm Học 2013-2014</option>
+                <option value="5">Năm Học 2014-2015</option>
+                <option value="6">Năm Học 2015-2016</option>
+                <option value="7">Năm Học 2016-2017</option>
+                <option value="8">Năm Học 2017-2018</option>
+
+            </select>
+            <select>
+                <option selected="selected" value="0">Chọn học kì</option>
+                <option value="9">Học kì I</option>
+                <option value="10">Học kì II</option>
+                <option value="11">Học kì hè</option>
+            </select>
+            <!-- end phan dang ky-->
+
+        
+    </div>
+    
+    <span>Date of birth<label>*</label></span>
+    <div class="ui calendar" id="example2">
+        <div class="ui input left icon">
+            <i class="calendar icon"></i>
+            <input type="text" placeholder="Date of birth">
+        </div>
+    </div>
+    <br />
+    <script>
+                $('#example2').calendar({
+                    type: 'date'
+                });
+    </script>
+    <span style="text-align:left">Gender<label>*</label></span>
+    <div class="ui selection dropdown">
+        <input type="hidden" name="gender">
+        <i class="dropdown icon"></i>
+        <div class="default text">Gender</div>
+        <div class="menu">
+            <div class="item" data-value="1">Male</div>
+            <div class="item" data-value="0">Female</div>
+        </div>
+    </div>
+    <script>
+                $(function () {
+                    $(".ui.dropdown").dropdown();
+                });
+    </script>
+
+    <div class="clearfix"> </div>
+    <a class="news-letter" href="#">
+        <!-- <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i>Sign Up for Newsletter</label> -->
+    </a>
+</div>
+<div class="clearfix"> </div>
+<div class="register-but">
+    <form>
+        <input type="submit" value="submit">
+        <p style="float: right;">(*) thông tin bắt buộc</p>
+        <div class="clearfix"> </div>
+    </form>
+</div>

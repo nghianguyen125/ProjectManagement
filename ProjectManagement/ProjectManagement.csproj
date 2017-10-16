@@ -188,6 +188,7 @@
     <Compile Include="Concrete\ProjectEntities.cs" />
     <Compile Include="Concrete\ThesisRepository.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CreateController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ThesisController.cs" />
@@ -221,8 +222,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Css\css\bootstrap.css" />
+    <Content Include="Css\css\dropdown.min.css" />
     <Content Include="Css\css\etalage.css" />
     <Content Include="Css\css\style.css" />
+    <Content Include="Css\css\transition.min.css" />
     <Content Include="Css\images\arrows.png" />
     <Content Include="Css\images\bg.jpg" />
     <Content Include="Css\images\compare.png" />
@@ -235,12 +238,15 @@
     <Content Include="Css\images\tick1.png" />
     <Content Include="Css\images\totnghiep.png" />
     <Content Include="Css\images\wishlist.png" />
+    <Content Include="Css\js\dropdown.min.js" />
     <Content Include="Css\js\easyResponsiveTabs.js" />
     <Content Include="Css\js\hover_pack.js" />
     <Content Include="Css\js\jquery-1.11.1.min.js" />
     <Content Include="Css\js\jquery.etalage.min.js" />
     <Content Include="Css\js\nav.js" />
     <Content Include="Css\js\responsiveslides.min.js" />
+    <Content Include="Css\js\semantic.min.js" />
+    <Content Include="Css\js\transition.min.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -277,6 +283,10 @@
     <Content Include="Views\Home\News.cshtml" />
     <Content Include="Views\Thesis\MyGroup.cshtml" />
     <Content Include="Views\Thesis\MyProgress.cshtml" />
+    <Content Include="Views\Create\CreateStudent.cshtml" />
+    <Content Include="Views\Create\CreateTeacher.cshtml" />
+    <Content Include="Views\Create\CreateTopic.cshtml" />
+    <Content Include="Views\Create\RegisterCapstone.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

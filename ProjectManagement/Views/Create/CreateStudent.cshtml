@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "CreateStudent";
+    Layout = "~/Views/Layout/HomeLayout.cshtml";
+}
+
+<h2>CreateStudent</h2>
+
+<div class="register-top-grid">
+    <h3>New Lecturers Information</h3>
+    <div>
+        <span>Full Name<label>*</label></span>
+        <input type="text">
+        <span>Email<label>*</label></span>
+        <input type="text">
+        <span>Telephone number<label>*</label></span>
+        <input type="text">
+        <span>Account Type<label>*</label></span>
+        <select>
+            <option value="GV">Lecturers</option>
+            <option value="NX">Viewer</option>
+            <option value="PDT">Admin</option>
+            <option value="SV">Student</option>
+        </select>
+        <span>Select the academic year and semester <label>*</label></span>
+        <select>
+            <option selected="selected" value="0">Chọn năm học</option>
+            <option value="1">Năm Học 2009-2010</option>
+            <option value="2">Năm Học 2011-2012</option>
+            <option value="3">Năm Học 2012-2013</option>
+            <option value="4">Năm Học 2013-2014</option>
+            <option value="5">Năm Học 2014-2015</option>
+            <option value="6">Năm Học 2015-2016</option>
+            <option value="7">Năm Học 2016-2017</option>
+            <option value="8">Năm Học 2017-2018</option>
+
+        </select>
+        <select>
+            <option selected="selected" value="0">Chọn học kì</option>
+            <option value="9">Học kì I</option>
+            <option value="10">Học kì II</option>
+            <option value="11">Học kì hè</option>
+        </select>
+        <!-- end phan dang ky-->
+        <span>UserName<label>*</label></span>
+        <input type="text">
+        <span>Password<label>*</label></span>
+        <input type="text">
+        <div class="register-but">
+            <form>
+                <input type="submit" value="submit">
+                <p style="float: left;">(*) thông tin bắt buộc</p>
+                <div class="clearfix"> </div>
+            </form>
+        </div>
+    </div>
+
+</div>

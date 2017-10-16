@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "CreateTeacher";
+    Layout = "~/Views/Layout/HomeLayout.cshtml";
+}
+
+<h2>CreateTeacher</h2>
+
+<div class="register-top-grid">
+    <h3>New Lecturers Information</h3>
+    <div>
+        <span>Full Name<label>*</label></span>
+        <input type="text">
+        <span>Email<label>*</label></span>
+        <input type="text">
+        <span>Telephone number<label>*</label></span>
+        <input type="text">
+        <span>Account Type<label>*</label></span>
+        <select>
+            <option value="GV">Lecturers</option>
+            <option value="NX">Viewer</option>
+            <option value="PDT">Admin</option>
+            <option value="SV">Student</option>
+        </select>
+        <span>UserName<label>*</label></span>
+        <input type="text">
+        <span>Password<label>*</label></span>
+        <input type="text">
+        <div class="register-but">
+            <form>
+                <input type="submit" value="submit">
+                <p style="float: left;">(*) thông tin bắt buộc</p>
+                <div class="clearfix"> </div>
+            </form>
+        </div>
+    </div>
+    
+</div>
